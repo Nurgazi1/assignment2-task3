@@ -1,5 +1,5 @@
 public abstract class Vehicle implements Servicable {
-    private int id;
+    protected int id;
     private static int idGen;
     private String model;
     private int year;
@@ -57,7 +57,6 @@ public abstract class Vehicle implements Servicable {
     }
     public abstract double calculateInsuranceFee();
 
-    @Override
     public String toString() {
         return "Model: " + model + ". Year: " + year + ". Base Price: " + basePrize + ". ID: " + id;
     }
